@@ -11,6 +11,7 @@
             </div>
         </div>
         <div class="w-[50%] flex justify-center items-center text-center">
+            <h1 class="m-0 text-3xl">MADE FOR</h1>
             <img src="~/assets/images/SW_LOGO_SWAG_300x184.png" />
         </div>
     </div>

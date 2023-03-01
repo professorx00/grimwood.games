@@ -5,7 +5,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
@@ -18,5 +19,8 @@
     "@pinia/nuxt": "^0.4.7",
     "bootstrap-icons": "^1.10.3",
     "pinia": "^2.0.32"
-  }
+  },
+  "engines": {
+    "node": "16.x"
+ }
 }
