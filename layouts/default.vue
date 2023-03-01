@@ -2,6 +2,7 @@
     <div class="bg-BlueBlack min-h-screen text-LightYellow">
         <NavBar />
         <slot />
+        <Footer />
     </div>
 </template>
 

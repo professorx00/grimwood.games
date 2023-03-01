@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     colors: {
-      BlueBlack: "#0E1822",
+      BlueBlack: "#183451",
       LightYellow: "#F8E3B3",
       Peach: "#F8A370",
       DarkRose: "#70313A",
@@ -20,5 +20,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
