@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <div class="mx-20">
+      Test
     </div>
 </template>
 
