@@ -1,7 +1,7 @@
 <template>
     <div class="bg-ForestGreen min-h-[14ch] flex justify-center items-center">
         <div class="w-[50%] flex flex-col justify-center items-center">
-            <h1 class="m-0 text-3xl">FOLLOW</h1>
+            <h1 class="m-0 text-3xl">FOLLOW US</h1>
             <div class="my-1 space-x-2">    
                 <a href="https://discord.gg/MEycW8uBPX" target="_blank"><i class="bi bi-discord text-5xl"></i></a>
                 <a href="https://www.twitch.tv/grimwood_games" target="_blank"><i class="bi bi-twitch text-5xl"></i></a>
