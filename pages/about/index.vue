@@ -1,6 +1,5 @@
 <template>
-     <div class="mx-20 bgPage h-full min-h-[80ch] justify-center text-center items-center">
-        <div class="p-7">
+      <div class="bgPage w-[90%] h-[86vh] flex flex-col justify-center items-center">
             <h1 class="text-6xl">About Grimwood Games</h1>
             <div class="text-left text-2xl mx-60 my-10 flex flex-col space-y-9">
                 <p>Welcome to Grimwood Games! We specialize in adventure and setting design for role-playing games, with a focus on urban fantasy worlds in modern day settings. Whether you're a player or a game master, our content is designed to add depth and excitement to your gaming sessions. Our products are tailored for popular game systems such as Savage Worlds and Pathfinder, and we hope to expand to other systems in the future. </p>
@@ -8,7 +7,6 @@
                 <p>As a viewer, you can expect to see behind-the-scenes glimpses of our design process, previews of upcoming products, and live Q&A sessions with our team. We love engaging with our community and hearing your feedback, so be sure to follow us and join in on the conversation. </p>
                 <p>Thank you for joining us on this adventure, and we can't wait to see where our imaginations take us next!</p>
             </div>
-        </div>
     </div>
 </template>
 
