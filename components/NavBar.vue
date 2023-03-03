@@ -1,76 +1,58 @@
 <template>
-  <Disclosure as="nav" class="bg-gray-800" v-slot="{ open }">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-16 items-center justify-between">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-            <span class="sr-only">Open main menu</span>
-            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
-            <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
-          </DisclosureButton>
-        </div>
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="flex flex-shrink-0 items-center">
-            <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
-            <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
-          </div>
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
-            </div>
-          </div>
-        </div>
-        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-            <span class="sr-only">View notifications</span>
-            <BellIcon class="h-6 w-6" aria-hidden="true" />
-          </button>
-
-          <!-- Profile dropdown -->
-          <Menu as="div" class="relative ml-3">
-            <div>
-              <MenuButton class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                <span class="sr-only">Open user menu</span>
-                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-              </MenuButton>
-            </div>
-            <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
-              <MenuItems class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                <MenuItem v-slot="{ active }">
-                  <a href="#" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">Your Profile</a>
-                </MenuItem>
-                <MenuItem v-slot="{ active }">
-                  <a href="#" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">Settings</a>
-                </MenuItem>
-                <MenuItem v-slot="{ active }">
-                  <a href="#" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">Sign out</a>
-                </MenuItem>
-              </MenuItems>
-            </transition>
-          </Menu>
-        </div>
+  <!--MD or Higher-->
+    <div v-if="!atTopOfPage" class="sticky top-0 left-0 bg-primary flex-row h-[10ch] z-50 hidden md:flex" >
+      <div class="flex flex-row items-center space-x-3">
+        <h2>Follow Us</h2>
+        <ul class="flex flex-row space-x-2">
+          <li><a href="https://discord.gg/MEycW8uBPX" target="_blank"><i class="bi bi-discord text-2xl hover:text-accent"></i></a></li>
+          <li><a href="https://www.twitch.tv/grimwood_games" target="_blank"><i class="bi bi-twitch text-2xl hover:text-accent"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UC_vlr0YCUaX9yJ5uMGIe9UQ" target="_blank"><i class="bi bi-youtube text-2xl hover:text-accent"></i></a></li>
+          <li><a href="https://twitter.com/Grimwood_Games"><i class="bi bi-twitter text-2xl hover:text-accent" target="_blank"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100090535811764" target="_blank"><i class="bi bi-facebook text-2xl hover:text-accent"></i></a></li>
+        </ul>
+      </div>
+      <div class="w-[60%] flex flex-row justify-center items-center">
+        <SmallLogo />
+      </div>
+      <div class="flex flex-row h-full items-center justify-center">
+        <ul class="flex flex-row w-full items-center space-x-5">
+          <li><h2 class="hover:text-accent"><NuxtLink to="/about">AboUt</NuxtLink></h2></li>
+          <li><h2 class="hover:text-accent"><NuxtLink to="/products">ProdUcts</NuxtLink></h2></li>
+          <li><h2 class="hover:text-accent"><NuxtLink to="/news">News</NuxtLink></h2></li>
+          <li><h2 class="hover:text-accent"><NuxtLink to="/community">CommUnity</NuxtLink></h2></li>
+        </ul>
       </div>
     </div>
-
-    <DisclosurePanel class="sm:hidden">
-      <div class="space-y-1 px-2 pt-2 pb-3">
-        <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
+    <div class="min-h-[25ch] md:flex hidden flex-col bg-ForestGreen transition-all duration-1000" :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
+      <div class="flex flex-row w-full items-center space-x-3">
+        <h2>Follow Us</h2>
+        <ul class="flex flex-row space-x-2">
+          <li><a href="https://discord.gg/MEycW8uBPX" target="_blank"><i class="bi bi-discord text-2xl hover:text-accent"></i></a></li>
+          <li><a href="https://www.twitch.tv/grimwood_games" target="_blank"><i class="bi bi-twitch text-2xl hover:text-accent"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UC_vlr0YCUaX9yJ5uMGIe9UQ" target="_blank"><i class="bi bi-youtube text-2xl hover:text-accent"></i></a></li>
+          <li><a href="https://twitter.com/Grimwood_Games"><i class="bi bi-twitter text-2xl hover:text-accent" target="_blank"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100090535811764" target="_blank"><i class="bi bi-facebook text-2xl hover:text-accent"></i></a></li>
+        </ul>
       </div>
-    </DisclosurePanel>
-  </Disclosure>
-</template>
+      <div class="flex flex-row h-full items-center justify-center">
+        <ul class="flex flex-row w-full justify-around items-center">
+          <li><h1 class="hover:text-accent"><NuxtLink to="/about">AboUt</NuxtLink></h1></li>
+          <li><h1 class="hover:text-accent"><NuxtLink to="/products">ProdUcts</NuxtLink></h1></li>
+          <li><NuxtLink to="/"><LargeLogo/></NuxtLink></li>
+          <li><h1 class="hover:text-accent"><NuxtLink to="/news">News</NuxtLink></h1></li>
+          <li><h1 class="hover:text-accent"><NuxtLink to="/community">CommUnity</NuxtLink></h1></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sticky top-0 bg-primary md:hidden flex flex-row z-50 justify-center items-center">
+      <SmallLogo />
+    </div>
+ </template>
 
 <script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
-
-const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-]
+const props = defineProps({
+  atTopOfPage: Boolean
+})
 </script>
 
 <style scoped>

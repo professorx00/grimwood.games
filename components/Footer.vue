@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-ForestGreen flex justify-center items-center w-screen absolute bottom-0 left-0 h-48">
+    <div class="bg-ForestGreen flex justify-center items-center w-screen h-48">
         <div class="w-[50%] flex flex-col justify-center items-center">
             <h1 class="m-0 text-3xl">FOLLOW US</h1>
             <div class="space-x-2">    

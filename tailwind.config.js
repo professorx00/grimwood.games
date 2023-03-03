@@ -30,7 +30,11 @@ module.exports = {
       highlight_dark: "#95876c",
       highlight_light: "#ffe6b9",
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        "ZenDots": ["ZenDots"]
+      }
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
