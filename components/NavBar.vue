@@ -23,7 +23,7 @@
         </ul>
       </div>
     </div>
-    <div class="min-h-[25ch] md:flex hidden flex-col bg-ForestGreen transition-all duration-1000" :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
+    <div class="z-50 min-h-[25ch] md:flex hidden flex-col bg-ForestGreen transition-all duration-1000" :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
       <div class="flex flex-row w-full items-center space-x-3">
         <h2>Follow Us</h2>
         <ul class="flex flex-row space-x-2">
@@ -44,7 +44,7 @@
         </ul>
       </div>
     </div>
-    <div class="sticky top-0 bg-primary md:hidden flex flex-row z-50 justify-center items-center">
+    <div class="z-50 sticky top-0 bg-primary md:hidden flex flex-row justify-center items-center">
       <SmallLogo />
     </div>
  </template>

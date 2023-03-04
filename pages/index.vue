@@ -1,9 +1,15 @@
 <template>
     <div class="flex flex-col justify-center items-center">
-      <div class="md:w-[80%] w-full relative">
-        <img src="~/assets/images/mainHero.jpg" class="opacity-30"/>
-        <div class="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center">
-          <h1 class="md:text-5xl text-2xl drop-shadow-xl shadow-primary_dark">Coming Soon Grimwood City</h1>
+      <div class="h-screen w-screen flex flex-col justify-center items-center">
+        <div class="w-full h-full bg-hero bg-cover">
+          <div class="w-[50%] h-[50%] flex flex-col justify-center items-center">
+            <h1 class="w-[60%]" >Discover new worlds, embark on thrilling adventures, and unleash your imagination with Grimwood Games</h1>
+          </div>
+          <div class="w-[50%] h-[50%] flex flex-col">
+            <div class="ml-[20%]">
+              <NuxtLink class="text-4xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary"  to="/newsletter">Subscribe to Newsletter</NuxtLink>
+            </div>
+          </div>
         </div>
       </div>
       <div class="md:w-[80%] w-full my-9">
@@ -14,11 +20,26 @@
           </div>
         </div>
       </div>
-      <div>
-        <h1>Newsletter</h1>
+      <div class="w-[80%] h-[50%] p-3 flex flex-row justify-center items-start">
+        <div class="w-[50%] h-[80%] flex flex-col justify-between items-center bg-adventure bg-cover rounded-xl mx-3">
+          <div class="flex flex-col justify-center items-center h-[50%]">
+            <div class="flex flex-col justify-center items-center bg-secondary p-3 rounded-xl border-2">
+              <h1 class="text-6xl">SUBSCRIBE</h1>
+              <p>TO OUR</p>
+              <h1>NEWSLETTER</h1>
+            </div>
+          </div>
+          <div class="flex flex-col justify-start items-center w-full h-[50%]">
+            <NuxtLink class="text-4xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary"  to="/newsletter">Sign Up Here</NuxtLink>
+          </div>
+        </div>
+        <div class="w-[50%] h-[80%] bg-secondary rounded-lg">
+          <NewsletterLaptop class="w-full"/>
+        </div>
       </div>
-      <div>
+      <div class="md:w-[80%] w-full my-5">
         <h1>Stream Schedule</h1>
+        
       </div>
     </div>
 </template>

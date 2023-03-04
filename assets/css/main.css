@@ -16,6 +16,14 @@
     font-family: "Cinzel";
     src: url('~/assets/fonts/CinzelDecorative-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: "CinzelBold";
+    src: url('~/assets/fonts/CinzelDecorative-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: "CinzelBlack";
+    src: url('~/assets/fonts/CinzelDecorative-Black.ttf') format('truetype');
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,10 +40,13 @@ html,body{
 h1 {
     font-size: 2rem/* 24px */;
     line-height: 2rem/* 32px */;
-    font-family: 'Cinzel';
+    font-family: 'CinzelBold';
 }
 h2 {
     font-size: 1.25rem/* 20px */;
     line-height: 1.75rem/* 28px */;
     font-family: 'Cinzel';
+}
+.text-shadow{
+    text-shadow: 0 0 1px rgba(0,0,0,0.5);
 }
