@@ -20,6 +20,7 @@
     "@heroicons/vue": "^2.0.16",
     "@pinia/nuxt": "^0.4.7",
     "bootstrap-icons": "^1.10.3",
+    "luxon": "^3.3.0",
     "pinia": "^2.0.32"
   },
   "engines": {

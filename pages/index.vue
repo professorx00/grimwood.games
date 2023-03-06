@@ -14,10 +14,13 @@
       </div>
       <div class="md:w-[80%] w-full my-9">
         <h1>News</h1>
-        <div class="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+        <div v-if="news.length > 0" class="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
           <div v-for="article in news" class="m-2">
            <Card :article="article"/>
           </div>
+        </div>
+        <div v-if="error">
+          <span> No Current News</span>
         </div>
       </div>
       <div class="w-[80%] h-[50%] p-3 flex flex-row justify-center items-start">
@@ -38,48 +41,68 @@
         </div>
       </div>
       <div class="md:w-[80%] w-full my-5">
-        <h1>Stream Schedule</h1>
-        
+        <h1>Weekly Stream Schedule</h1>
+        <div class="w-full grid lg:grid-cols-7 sm:grid-cols-3 grid-cols-1">
+          <div v-for="day in schedule">
+            <div class="border-2">
+              <div class="flex flex-col justify-center items-center bg-secondary"><h2>{{ day.day }}</h2></div>
+              <hr />
+              <div v-if="day.events.length > 0" class="h-[10ch] flex flex-col justify-center items-center">
+                <div v-for="event in day.events">
+                  <h4>{{ event.title }} @ {{ event.time.time }}</h4>
+
+                </div>
+              </div>
+              <div v-if="!day.events.length > 0" class="h-[10ch] flex flex-col justify-center items-center"> No Stream</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 </template>
 
-<script setup lang="ts">
-const news = [
+<script setup>
+import {useFormatTime} from '../composables/lux'
+let news = []
+let error = false
+const {data} = await useFetch('/api/latest');
+if(data.value.statusCode == 200){
+  news = data.value.data
+}else{
+  news = []
+  error = true
+}
+const schedule = [
   {
-    id: 1,
-    title: "Grimwood City in production",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-    img: 'https://picsum.photos/600',
-    url: '/articles/1'
+    day:"Sunday",
+    events:[]
   },
   {
-    id: 2,
-    title: "Rise of Midnight Sun",
-    description: "Coming Soon! A new adventure set in the exciting world of Grimwood City. Can your party help the mayor save his son before he has to pardon a terriost?",
-    img: 'https://picsum.photos/600',
-    url: '/articles/2'
+    day:"Monday",
+    events:[]
   },
   {
-    id: 3,
-    title: "Article 3",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-    img: 'https://picsum.photos/600',
-    url: '/articles/3'
+    day:"Tuesday",
+    events:[]
   },
   {
-    id: 4,
-    title: "Article 4",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-    img: 'https://picsum.photos/600',
-    url: '/articles/4'
+    day:"Wednesday",
+    events:[{
+      title:"Grimwood Development Stream",
+      time: useFormatTime('1/1/2023 08:00:00 PM')
+    }]
   },
   {
-    id: 5,
-    title: "Article 5",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-    img: 'https://picsum.photos/600',
-    url: '/articles/5'
+    day:"Thursday",
+    events:[]
+  },
+  {
+    day:"Friday",
+    events:[]
+  },
+  {
+    day:"Saturday",
+    events:[]
   },
 ]
 </script>

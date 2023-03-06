@@ -12,8 +12,10 @@
         </ul>
       </div>
       <div class="w-[60%] flex flex-row justify-center items-center">
+       <NuxtLink to="/">
         <!-- <img src="~/assets/images/LogoTest.png" alt="Grimwood Games Logo" class="w-[30ch]"> -->
         <img src="~/assets/images/LogoTest2.png" alt="Grimwood Games Logo" class="w-[30ch]">
+      </NuxtLink>
       </div>
       <div class="flex flex-row h-full items-center justify-center">
         <ul class="flex flex-row w-full items-center space-x-5">
@@ -24,7 +26,7 @@
         </ul>
       </div>
     </div>
-    <div class="z-50 min-h-[25ch] md:flex hidden flex-col bg-ForestGreen transition-all duration-1000" :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
+    <div class="z-50 min-h-[10%] md:flex hidden flex-col bg-ForestGreen transition-all duration-1000" :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
       <div class="flex flex-row w-full items-center space-x-3">
         <h2>Follow Us</h2>
         <ul class="flex flex-row space-x-2">
@@ -40,8 +42,10 @@
           <li><h1 class="hover:text-accent"><NuxtLink to="/about">AboUt</NuxtLink></h1></li>
           <li><h1 class="hover:text-accent"><NuxtLink to="/products">ProdUcts</NuxtLink></h1></li>
         </ul>
+        <NuxtLink to="/">
         <!-- <img src="~/assets/images/LogoTall.png" alt="Grimwood Games Logo" class="w-[40ch]"> -->
-        <img src="~/assets/images/LogoTall2.png" alt="Grimwood Games Logo" class="w-[40ch]">
+        <img src="~/assets/images/LogoTall2.png" alt="Grimwood Games Logo" class="w-[20ch]">
+      </NuxtLink>
         <ul class="flex flex-row space-x-14 mx-4">
           <li><h1 class="hover:text-accent"><NuxtLink to="/news">News</NuxtLink></h1></li>
           <li><h1 class="hover:text-accent"><NuxtLink to="/community">CommUnity</NuxtLink></h1></li>
