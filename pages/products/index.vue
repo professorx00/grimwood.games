@@ -3,7 +3,7 @@
         <div v-if="error">
             {{ error }}
         </div>
-        <div class="w-full p-20 grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-1">
+        <div class="w-full p-20 grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-1 space-x-3">
           <ProductCard v-for="product in products" :product="product" :key="product.id"/>
         </div>
     </div>
