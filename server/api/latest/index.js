@@ -1,7 +1,14 @@
 import news from '../news.json'
 export default defineEventHandler((event) => {
     const length = news.news.length
-    const latest = length-10<=0 ? news.news : news.news.slice(length-10)
+    const sortedNews = news.news.sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateA + dateB;
+    });
+    const latest =
+      length - 10 <= 0 ? sortedNews : sortedNews.slice(length - 10);
+      
     if(latest.length){
         return{
             statusCode: 200,
