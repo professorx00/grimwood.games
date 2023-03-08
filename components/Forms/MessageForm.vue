@@ -4,7 +4,8 @@
           :initial-values="initialValues"
           @submit="handleSubmit" >
         <FormsVTextInput name="email" placeholder="email" type="email" label="Email"/>
-        <FormsVTextInput name="password" placeholder="password" type="password" label="Password" />
+        <FormsVTextInput name="name" placeholder="Full Name" type="text" label="Full Name"/>
+        <FormsVTextArea name="message" placeholder="Message" label="Message"/>
         <button type="submit">Submit</button>
     </VForm>
     </div>
@@ -13,6 +14,7 @@
 <script setup>
 import * as yup from 'yup'
 import { configure } from 'vee-validate';
+
 configure({
   validateOnBlur: true, // controls if `blur` events should trigger validation with `handleChange` handler
   validateOnChange: true, // controls if `change` events should trigger validation with `handleChange` handler
@@ -22,7 +24,7 @@ configure({
 
 let schema = yup.object({
     email: yup.string().required().email(),
-    password: yup.string().required().min(8)
+    name: yup.string().required()
 })
 const initialValues = { email: "", password: "" };
 const handleSubmit = (values, action)=>{
