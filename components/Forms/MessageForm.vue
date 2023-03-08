@@ -1,19 +1,21 @@
 <template>
-    <div class=" w-[80%] flex flex-col p-6 bg-primary_light">
+    <div class=" w-[80%] flex flex-col p-2 bg-primary_light">
     <VForm :validation-schema="schema"
           :initial-values="initialValues"
-          @submit="handleSubmit" >
+          @submit="handleSubmit" 
+          v-slot="{meta, values}"
+          >
         <FormsVTextInput name="email" placeholder="email" type="email" label="Email"/>
         <FormsVTextInput name="name" placeholder="Full Name" type="text" label="Full Name"/>
         <FormsVTextArea name="message" placeholder="Message" label="Message"/>
-        <button type="submit">Submit</button>
+        <div class="w-full flex flex-row px-36 items-center justify-end"><FormsButton title="Send Message" :disabled="!meta.valid" /></div>
     </VForm>
     </div>
 </template>
 
 <script setup>
 import * as yup from 'yup'
-import { configure } from 'vee-validate';
+import { configure, useForm } from 'vee-validate';
 
 configure({
   validateOnBlur: true, // controls if `blur` events should trigger validation with `handleChange` handler
@@ -23,12 +25,13 @@ configure({
 });
 
 let schema = yup.object({
-    email: yup.string().required().email(),
+    email: yup.string().required().matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g, "Please enter a valid email address."),
     name: yup.string().required()
 })
 const initialValues = { email: "", password: "" };
 const handleSubmit = (values, action)=>{
     console.log(values)
+    action.resetForm()
 }
 </script>
 
