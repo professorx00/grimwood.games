@@ -1,11 +1,13 @@
 import news from '../news.json'
+import {DateTime} from 'luxon'
 export default defineEventHandler((event) => {
     const length = news.news.length
     const sortedNews = news.news.sort((a, b) => {
-      const dateA = new Date(a.date);
-      const dateB = new Date(b.date);
-      return dateA + dateB;
+      const dateA = DateTime.fromFormat(a.date, "yyyy-MM-dd");
+      const dateB = DateTime.fromFormat(b.date, "yyyy-MM-dd");
+      return dateA > dateB ? -1 : 1
     });
+  
     const latest =
       length - 10 <= 0 ? sortedNews : sortedNews.slice(length - 10);
       

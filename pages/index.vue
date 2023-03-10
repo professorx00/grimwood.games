@@ -1,20 +1,27 @@
 <template>
     <div class="flex flex-col justify-center items-center">
       <div class="h-screen w-screen flex flex-col justify-center items-center">
-        <div class="w-full h-full bg-hero bg-cover">
-          <div class="w-[50%] h-[50%] flex flex-col justify-center items-center">
-            <h1 class="w-[60%]" >Discover new worlds, embark on thrilling adventures, and unleash your imagination with Grimwood Games</h1>
+        <div class="w-full md:h-full h-[50%] relative">
+          <div id="background" class="z-0">
+              <img src="~/assets/images/imagination.jpg" class="h-full w-full" alt="" />
           </div>
-          <div class="w-[50%] h-[50%] flex flex-col">
-            <div class="ml-[20%]">
-              <NuxtLink class="text-4xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary"  to="/newsletter">Subscribe to Newsletter</NuxtLink>
+          <div class="w-full h-full z-30 absolute">
+            <div class="md:w-[50%] w-full h-[50%] flex flex-col justify-center items-center">
+              <h1 class="w-[60%] md:text-4xl text-xl" >Discover new worlds, embark on thrilling adventures, and unleash your imagination with Grimwood Games</h1>
+            </div>
+            <div class="md:w-[50%] w-full h-[50%] flex flex-col">
+              <div class="ml-[20%]">
+                <NuxtLink class="lg:text-4xl md:text-2xl text-xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary"  to="/newsletter">Subscribe to Newsletter</NuxtLink>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="md:w-[80%] w-full my-9">
-        <h1>News</h1>
-        <div v-if="news.length > 0" class="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+      <div class="w-full my-9 flex flex-col justify-center items-center ">
+        <div class="w-full text-left">
+          <h1 class="ml-6">News</h1>
+        </div>
+        <div v-if="news.length > 0" class="w-[80%] grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
           <div v-for="article in news" class="m-2">
            <Card :article="article"/>
           </div>
@@ -23,31 +30,29 @@
           <span> No Current News</span>
         </div>
       </div>
-      <div class="w-[80%] h-[50%] p-3 flex flex-row justify-center items-start">
-        <div class="w-[50%] h-[80%] flex flex-col justify-between items-center bg-adventure bg-cover rounded-xl mx-3">
-          <div class="flex flex-col justify-center items-center h-[50%]">
+      <div class="w-full h-[50%] p-3 flex md:flex-row flex-col justify-center items-start">
+        <div class="lg:w-[50%] w-full h-full flex flex-col justify-around items-center bg-adventure bg-cover rounded-xl m-3">
             <div class="flex flex-col justify-center items-center bg-secondary p-3 rounded-xl border-2">
-              <h1 class="text-6xl">SUBSCRIBE</h1>
-              <p>TO OUR</p>
-              <h1>NEWSLETTER</h1>
+              <h1 class="text-5xl">SUBSCRIBE</h1>
+              <p class="text-2xl">TO OUR</p>
+              <h1 class="text-4xl">NEWSLETTER</h1>
             </div>
-          </div>
-          <div class="flex flex-col justify-start items-center w-full h-[50%]">
             <NuxtLink class="text-4xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary"  to="/newsletter">Sign Up Here</NuxtLink>
-          </div>
         </div>
-        <div class="w-[50%] h-[80%] bg-secondary rounded-lg">
+        <div class="lg:w-[50%] w-full bg-secondary rounded-lg m-4">
           <NewsletterLaptop class="w-full"/>
         </div>
       </div>
-      <div class="md:w-[80%] w-full my-5">
-        <h1>Weekly Stream Schedule</h1>
-        <div class="w-full grid lg:grid-cols-7 sm:grid-cols-3 grid-cols-1">
+      <div class="w-full my-5 flex flex-col justify-center items-center">
+        <div class="text-left w-full">
+          <h1 class="ml-6">Weekly Stream Schedule</h1>
+        </div>
+        <div class="w-[90%] m-6 grid lg:grid-cols-7 sm:grid-cols-2 grid-cols-1">
           <div v-for="day in schedule">
             <div class="border-2">
               <div class="flex flex-col justify-center items-center bg-secondary"><h2>{{ day.day }}</h2></div>
               <hr />
-              <div v-if="day.events.length > 0" class="h-[10ch] flex flex-col justify-center items-center">
+              <div v-if="day.events.length > 0" class="h-[10ch] flex flex-col justify-center items-center p-6">
                 <div v-for="event in day.events">
                   <h4>{{ event.title }} @ {{ event.time.time }}</h4>
 
@@ -108,6 +113,13 @@ const schedule = [
 </script>
 
 <style scoped>
-
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    opacity: 10;
+}
 </style>
 

@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full min-h-[95%] h-[95%]">
+    <div class="w-full md:h-screen flex justify-center items-start my-5">
         <div v-if="error">
             {{ error }}
         </div>
-        <div class="w-full p-20 grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-1 space-x-3">
+        <div class="w-[80%] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
           <ProductCard v-for="product in products" :product="product" :key="product.id"/>
         </div>
     </div>
