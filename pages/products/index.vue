@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full md:h-screen flex justify-center items-start my-5">
+    <div class="w-full md:h-[70vh] flex justify-center items-start my-5 overflow-y-scroll">
         <div v-if="error">
             {{ error }}
         </div>

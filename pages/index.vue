@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center ">
       <div class="h-screen w-screen flex flex-col justify-center items-center">
         <div class="w-full md:h-full h-[50%] relative">
           <div id="background" class="z-0">

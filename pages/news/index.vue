@@ -3,12 +3,13 @@
         <div v-if="error">
             <h1>Something went wrong</h1>
         </div>
-        <div v-else>
-            <div v-if="news.length > 0" class="w-full p-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-          <div v-for="article in news" class="m-2 ">
-           <Card :article="article"/>
-          </div>
-        </div>
+        <div v-else class="flex flex-col items-center h-[70vh] w-full overflow-y-scroll">
+            <h1 class="text-4xl text-highlight my-6">News</h1>
+            <div v-if="news.length > 0" class="w-[80%] grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 over">
+                <div v-for="article in news" class="mx-2">
+                <Card :article="article"/>
+                </div>
+            </div>
         </div>
     </div>
 </template>
