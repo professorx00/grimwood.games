@@ -39,8 +39,8 @@
             </div>
             <NuxtLink class="text-4xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary"  to="/newsletter">Sign Up Here</NuxtLink>
         </div>
-        <div class="lg:w-[50%] w-full bg-secondary rounded-lg m-4">
-          <NewsletterLaptop class="w-full"/>
+        <div class="lg:w-[50%] h-full w-full bg-secondary rounded-lg m-4">
+          <NewsletterLaptop class="w-full h-full"/>
         </div>
       </div>
       <div class="w-full my-5 flex flex-col justify-center items-center">

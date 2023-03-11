@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center items-center p-10">
+    <div v-if="!signedUp" class="flex flex-col justify-center items-center p-10">
         <form class="flex flex-col w-[50%] bg-highlight m-32 p-10" :onsubmit="handleSubmit">
             <div class="w-full flex flex-row justify-center">
                 <h1 class="text-4xl text-primary">Subscribe to our newsletter</h1>
@@ -14,12 +14,19 @@
             </div>
         </form>
     </div>
+     <div v-if="signedUp" class="flex flex-col justify-center items-center p-10">
+        <h1 class="text-highlight">Thank you for signing up to the newsletter</h1>
+    </div>
 </template>
 
 <script setup>
-const handleSubmit = (e) => {
+const signedUp = ref(false);
+const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(e.target[0].value);
+    const {data}= await useFetch('/mail/newsletter',{ method: 'POST', body: {email}})
+    if(data.value.statusCode === 200){
+        signedUp.value = true;
+    }
 }
 </script>
 
