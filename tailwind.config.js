@@ -30,7 +30,16 @@ module.exports = {
       highlight_dark: "#95876c",
       highlight_light: "#ffe6b9",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        ZenDots: ["ZenDots"],
+      },
+      backgroundImage: {
+        hero: "url('~/assets/images/imagination.jpg')",
+        newsLetter: "url('~/assets/images/newsletter.png')",
+        adventure: "url('~/assets/images/adventure.jpg')",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
