@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@vueuse/nuxt",
   ],
-  build: { transpile: ["yup", "luxon", "@vee-validate/rules"] },
+  build: { transpile: ["luxon", "@vee-validate/rules"] },
   pinia: {
     autoImports: [
       // automatically imports `defineStore`

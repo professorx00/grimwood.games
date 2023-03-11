@@ -62,10 +62,10 @@
     <div v-if="modal" class="w-screen h-[95vh] flex flex-col items-center justify-between">
       <div class="flex flex-col w-full h-[50vh] justify-center items-center">
         <ul class="flex flex-col w-full items-center">
-          <li><h2 class="hover:text-accent text-5xl m-5"><button @click="handleHamburger"><NuxtLink to="/about">AboUt</NuxtLink></button></h2></li>
-          <li><h2 class="hover:text-accent text-5xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">ProdUcts</NuxtLink></button></h2></li>
-          <li><h2 class="hover:text-accent text-5xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li>
-          <li><h2 class="hover:text-accent text-5xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">CommUnity</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/about">AboUt</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">ProdUcts</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">CommUnity</NuxtLink></button></h2></li>
         </ul>
       </div>
       <div class="flex flex-row h-full space-x-3 ">

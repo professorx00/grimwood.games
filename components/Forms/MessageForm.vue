@@ -1,10 +1,10 @@
 <template>
-    <div class=" w-[80%] h-[90ch] flex flex-col  justify-center items-center text-center p-2 bg-primary_light" v-if="!messageSent">
+    <div class=" lg:w-[80%] w-full h-[90ch] flex flex-col  justify-center items-center text-center p-2 bg-primary_light" v-if="!messageSent">
     <VForm :validation-schema="schema"
           :initial-values="initialValues"
           @submit="handleSubmit" 
           v-slot="{meta, values}"
-          class="w-[80%]">
+          class="lg:w-[80%] w-full">
         <h1 class="text-highlight">Or Send Us A Message</h1>
         <FormsVTextInput name="email" placeholder="Email" type="email" label="Email"/>
         <FormsVTextInput name="name" placeholder="Full Name" type="text" label="Full Name"/>
@@ -43,8 +43,10 @@ const handleSubmit = (values, action)=>{
         method: 'POST',
         body: {email, name, message}
     })
-    if (data) {
+    if (data.statusCode == 200) {
         messageSent.value = true;
+    }else{
+        console.log(data)
     }
 }
 </script>

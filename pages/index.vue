@@ -1,23 +1,17 @@
 <template>
     <div class="flex flex-col justify-center items-center ">
-      <div class="h-screen w-screen flex flex-col justify-center items-center">
-        <div class="w-full md:h-full h-[50%] relative">
+      <div class="h-screen w-screen mt-10 flex flex-col justify-center items-center">
+        <div class="w-full h-full relative">
           <div id="background" class="z-0">
-              <img src="~/assets/images/imagination.jpg" class="h-full w-full" alt="" />
+              <img src="~/assets/images/imagination.jpg" class="h-full w-full lg:opacity-100 opacity-60" alt="" />
           </div>
-          <div class="w-full h-full z-30 absolute">
-            <div class="md:w-[50%] w-full h-[50%] flex flex-col justify-center items-center">
-              <h1 class="w-[60%] md:text-4xl text-xl" >Discover new worlds, embark on thrilling adventures, and unleash your imagination with Grimwood Games</h1>
-            </div>
-            <div class="md:w-[50%] w-full h-[50%] flex flex-col">
-              <div class="ml-[20%]">
-                <NuxtLink class="lg:text-4xl md:text-2xl text-xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary"  to="/newsletter">Subscribe to Newsletter</NuxtLink>
-              </div>
-            </div>
+          <div class="w-full h-full lg:w-[50%] flex flex-col lg:justify-start justify-center items-center lg:text-left text-center z-30 absolute p-2  lg:mt-10 lg:ml-5">
+              <h1 class="md:text-4xl text-2xl lg:bg-opacity-0 bg-primary" >Discover new worlds, embark on thrilling adventures, and unleash your imagination with Grimwood Games</h1>
+                <NuxtLink class="lg:text-4xl md:text-2xl text-xl border-2 rounded-lg p-3 bg-secondary hover:bg-accent hover:text-primary mt-4"  to="/newsletter">Subscribe to Newsletter</NuxtLink>
           </div>
         </div>
       </div>
-      <div class="w-full my-9 flex flex-col justify-center items-center ">
+      <div class="w-full my-9 flex flex-col justify-center items-center  ">
         <div class="w-full text-left">
           <h1 class="ml-6">News</h1>
         </div>
