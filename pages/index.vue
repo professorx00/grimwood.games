@@ -40,6 +40,7 @@
       <div class="w-full my-5 flex flex-col justify-center items-center">
         <div class="text-left w-full">
           <h1 class="ml-6">Weekly Stream Schedule</h1>
+          <h4 class="ml-16">All Times are in Eastern Time Zone</h4>
         </div>
         <div class="w-[90%] m-6 grid lg:grid-cols-7 sm:grid-cols-2 grid-cols-1">
           <div v-for="day in schedule">
@@ -97,7 +98,10 @@ const schedule = [
   },
   {
     day:"Friday",
-    events:[]
+    events:[{
+      title:"Coming In May Actual Play of Grimwood City: Dark Days Campaign",
+      time: useFormatTime('1/1/2023 08:00:00 PM')
+    }]
   },
   {
     day:"Saturday",

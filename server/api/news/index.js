@@ -28,6 +28,15 @@ const news = [
     url: "/news/3",
     date: "2023-03-08",
   },
+  {
+    id: 4,
+    title: "Grimwood City: Dark Days",
+    description:
+      "We are excited to announce our first actual play coming to twitch in May. We will be playing the new Grimwood City: Dark Days campaign. ",
+    img: "https://www.scabard.com/user/professorx00/image/DarkDays.png",
+    url: "/news/4",
+    date: "2023-04-11",
+  },
 ];
 
 export default defineEventHandler((event) => {
