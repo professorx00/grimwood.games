@@ -1,19 +1,19 @@
 <template>
-    <div class=" lg:w-[80%] w-full h-[90ch] flex flex-col  justify-center items-center text-center p-2 bg-primary_light" v-if="!messageSent">
+    <div class=" lg:w-[80%] w-full h-[90ch] flex flex-col  justify-center items-center text-center p-2 bg-primary_m_light" v-if="!messageSent">
     <VForm :validation-schema="schema"
           :initial-values="initialValues"
           @submit="handleSubmit" 
           v-slot="{meta, values}"
           class="lg:w-[80%] w-full">
-        <h1 class="text-highlight">Or Send Us A Message</h1>
+        <h1 class="text-highlight_m">Or Send Us A Message</h1>
         <FormsVTextInput name="email" placeholder="Email" type="email" label="Email"/>
         <FormsVTextInput name="name" placeholder="Full Name" type="text" label="Full Name"/>
         <FormsVTextArea name="message" placeholder="Message" label="Message"/>
         <div class="w-full flex flex-row px-36 items-center justify-end"><FormsButton title="Send Message" :disabled="!meta.valid" /></div>
     </VForm>
     </div>
-    <div class=" w-[80%] h-[90ch] flex flex-col justify-center items-center p-2 bg-primary_light" v-if="messageSent" >
-        <h1 class="text-highlight">Your Message has been sent! Thank you for reaching out to us. </h1>
+    <div class=" w-[80%] h-[90ch] flex flex-col justify-center items-center p-2 bg-primary_m_light" v-if="messageSent" >
+        <h1 class="text-highlight_m">Your Message has been sent! Thank you for reaching out to us. </h1>
     </div>
 </template>
 

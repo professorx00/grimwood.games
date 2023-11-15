@@ -3,14 +3,14 @@
 
         <VField :name="name" v-slot="{field,meta,errors}">
             <div class="flex flex-row w-full ">
-                <label class="w-[20%] text-2xl text-right m-3 text-highlight">{{ label }}</label>
+                <label class="w-[20%] text-2xl text-right m-3 text-highlight_m">{{ label }}</label>
                 <div class="lg:w-[70%] w-[90%] flex flex-row text-2xl relative shadow-lg">
-                    <textarea col="430" row="430" v-bind="field" class="w-full p-3 rounded-lg border-4 border-primary focus:border-4 focus:border-accent" :class="{[errorClass]: meta.touched && !meta.vaild && errors.length>0 && field.value !='', 'border-2 border-secondary bg-secondary bg-opacity-40': meta.touched && meta.valid && errors.length <=0 }" :placeholder="placeholder" :type="type" />
+                    <textarea col="430" row="430" v-bind="field" class="w-full p-3 rounded-lg border-4 border-primary_m focus:border-4 focus:border-accent_m" :class="{[errorClass]: meta.touched && !meta.vaild && errors.length>0 && field.value !='', 'border-2 border-secondary_m bg-secondary_m bg-opacity-40': meta.touched && meta.valid && errors.length <=0 }" :placeholder="placeholder" :type="type" />
                     <div v-if="meta.touched && meta.valid && errors.length <=0" class="h-full  flex flex-row text-2xl justify-center items-center absolute top-0 right-5"><i class="bi bi-check-circle-fill" ></i></div>
                     <div v-if="meta.touched && !meta.vaild && errors.length>0 && field.value !=''" class="h-full  flex flex-row text-2xl justify-center items-center absolute top-0 right-5"><i class="bi bi-exclamation-octagon-fill"></i></div>
                 </div>
             </div>
-            <div v-if="errors.length>0 && field.value !=''" class="w-full flex flex-row justify-center items-center text-2xl text-accent">
+            <div v-if="errors.length>0 && field.value !=''" class="w-full flex flex-row justify-center items-center text-2xl text-accent_m">
                 <VErrorMessage :name="name" as="div" class="" />
             </div>
         </VField>
@@ -37,7 +37,7 @@
         default: ""
     }
  })
- const errorClass = 'bg-accent_dark border-2 border-accent_dark bg-opacity-40'
+ const errorClass = 'bg-accent_m_dark border-2 border-accent_dark bg-opacity-40'
  const successClass = 'bg-secondary'
 </script>
 

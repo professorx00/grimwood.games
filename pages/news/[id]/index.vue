@@ -1,9 +1,9 @@
 <template>
     <div>
         <div v-if="error">
-            <span class="w-full text-accent_dark text-4xl">Error Retrieving Data please try again</span>
+            <span class="w-full text-accent_m_dark text-4xl">Error Retrieving Data please try again</span>
         </div>
-        <NuxtLink to="/news" class="text-left m-28 hover:text-secondary">Back</NuxtLink>
+        <NuxtLink to="/news" class="text-left m-28 hover:text-_m">Back</NuxtLink>
         <div class="mt-3 flex flex-col justify-center items-center text-center p-5">
             <h1>{{ news.title }}</h1>
             <img :src="news.img" :alt="news.title" class="w-[25%] min-sm:w-full" />

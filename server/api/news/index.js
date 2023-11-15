@@ -37,6 +37,15 @@ const news = [
     url: "/news/4",
     date: "2023-04-11",
   },
+  {
+    id: 5,
+    title: "Grimwood City Season 2: The Long Winter",
+    description:
+      "Come Watch the Second Season of Grimwood City on <a href='https://www.twitch.tv/grimwood_games'>Twitch</a>. ",
+    img: "https://www.scabard.com/user/professorx00/image/DarkDays.png",
+    url: "/news/5",
+    date: "2023-11-01",
+  },
 ];
 
 export default defineEventHandler((event) => {

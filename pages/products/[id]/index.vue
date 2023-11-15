@@ -30,7 +30,7 @@
 
             </div>
             <div class="w-[50%] flex flex-col justify-center items-center text-center ">
-                <img :src="product.img" :alt="product.title" class=" rounded-md shadow-md shadow-primary hover:shadow-secondary"/>
+                <img :src="product.img" :alt="product.title" class=" rounded-md shadow-md shadow-primary_m hover:shadow-secondary_m"/>
             </div>
 
         </div>

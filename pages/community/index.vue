@@ -9,8 +9,8 @@
                 </div>
             </NuxtLink>
         </div>
-        <div class="p-5 text-primary w-full flex flex-col justify-center items-center">
-            <FormsMessageForm />
+        <div class="p-5 text-primary_m w-full flex flex-col justify-center items-center">
+            <!-- <FormsMessageForm /> -->
         </div>
     </div>
 </template>
