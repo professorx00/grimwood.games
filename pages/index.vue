@@ -59,19 +59,19 @@
       <div class="hero min-h-screen text-LightYellow twitch" >
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content min-h-full min-w-full flex-col lg:flex-row">
-        <div class="flex flex-col max-w-6xl justify-center items-center">
-           <div class="flex flex-col mb-7 justify-center text-center">
-                <h1 class="text-5xl">WATCH US ON</h1><br/>
-                <div class="flex md:flex-row flex-col md:w-full">
-                  <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m"  to="https://www.twitch.tv/grimwood_games" >Twitch <i class="bi bi-twitch md:text-5xl text-xl"></i></NuxtLink>
-                  <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg p-3 ml-3 md:mt-0 mt-2 bg-secondary_m hover:bg-accent_m hover:text-primary_m" to="https://www.youtube.com/channel/UC_vlr0YCUaX9yJ5uMGIe9UQ" target="_blank">YouTube <i class="bi bi-youtube md:text-5xl text-xl"></i></NuxtLink>
-                </div>
-            </div>
-            <div class="flex flex-col md:w-full mt-5 mb-4 justify-center items-center text-center">
-                <h1 class="text-5xl">JOIN OUR DISCORD</h1><br/>
-                <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg bg-secondary_m hover:bg-accent_m hover:text-primary_m p-3"   to="https://discord.gg/MEycW8uBPX" >Discord <i class="bi bi-discord md:text-5xl text-2xl"></i></NuxtLink>
-            </div>
-        </div>
+          <div class="flex flex-col justify-center items-center">
+              <div class="flex flex-col mb-7 justify-center items-center text-center">
+                  <h1 class="text-5xl">WATCH US ON</h1><br/>
+                  <div class="flex md:flex-row flex-col ">
+                    <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m"  to="https://www.twitch.tv/grimwood_games" >Twitch <i class="bi bi-twitch md:text-5xl text-2xl"></i></NuxtLink>
+                    <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg p-3 md:ml-3 md:mt-0 mt-2 bg-secondary_m hover:bg-accent_m hover:text-primary_m" to="https://www.youtube.com/channel/UC_vlr0YCUaX9yJ5uMGIe9UQ" target="_blank">YouTube <i class="bi bi-youtube md:text-5xl text-2xl"></i></NuxtLink>
+                  </div>
+              </div>
+              <div class="flex flex-col mt-5 mb-4 justify-center items-center text-center">
+                  <h1 class="text-5xl">JOIN OUR DISCORD</h1><br/>
+                  <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg bg-secondary_m hover:bg-accent_m hover:text-primary_m p-3"   to="https://discord.gg/MEycW8uBPX" >Discord <i class="bi bi-discord md:text-5xl text-2xl"></i></NuxtLink>
+              </div>
+          </div>
         </div>
     </div>
   </div>
