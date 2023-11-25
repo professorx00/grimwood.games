@@ -12,10 +12,17 @@
       </div>
       
       <div class="w-full my-9 flex flex-col justify-center items-center  ">  
-        <div class="w-full text-left ml-14">
+        <div class="w-full md:text-left text-center ml-14">
           <h1 class="ml-6">News</h1>
         </div>
         <div class="w-full my-9 flex md:flex-row flex-col justify-center items-center">
+          <div class="card w-96 bg-secondary_m shadow-xl m-11">
+            <figure><img src="~/assets/images/adventure.jpg" alt="Grimwood City Editing" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">Grimwood City is going to the editors</h2>
+              <p>We have found an editor and are working to get them a manuscript so they can correct all our mistakes and mistypes.</p>
+            </div>
+          </div>
           <div class="card w-96 bg-secondary_m shadow-xl m-11">
             <figure><img src="~/assets/images/LongWinter.jpg" alt="GrimwoodCity" /></figure>
             <div class="card-body">
@@ -42,72 +49,32 @@
         </div>
       </div>
       <div class="w-full my-5 flex flex-col justify-center items-center">
-        <div class="text-left w-full">
+        <div class="md:text-left text-center w-full">
           <h1 class="ml-6">Weekly Stream Schedule</h1>
-          <h4 class="ml-16">All Times are in Eastern Time Zone</h4>
         </div>
-        <div class="w-[90%] m-6 grid lg:grid-cols-7 sm:grid-cols-2 grid-cols-1">
-          <div v-for="day in schedule">
-            <div class="border-2">
-              <div class="flex flex-col justify-center items-center bg-secondary_m"><h2>{{ day.day }}</h2></div>
-              <hr />
-              <div v-if="day.events.length > 0" class="h-[10ch] flex flex-col justify-center items-center p-6">
-                <div v-for="event in day.events">
-                  <h4>{{ event.title }} @ {{ event.time.time }}</h4>
-
+        <div class="w-full h-[50vh] flex justify-center">
+          <AppCalendar />
+        </div>
+      </div>
+      <div class="hero min-h-screen text-LightYellow twitch" >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content min-h-full min-w-full flex-col lg:flex-row">
+        <div class="flex flex-col max-w-6xl justify-center items-center">
+           <div class="flex flex-col mb-7 justify-center text-center">
+                <h1 class="text-5xl">WATCH US ON</h1><br/>
+                <div class="flex md:flex-row flex-col md:w-full">
+                  <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m"  to="https://www.twitch.tv/grimwood_games" >Twitch <i class="bi bi-twitch md:text-5xl text-xl"></i></NuxtLink>
+                  <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg p-3 ml-3 md:mt-0 mt-2 bg-secondary_m hover:bg-accent_m hover:text-primary_m" to="https://www.youtube.com/channel/UC_vlr0YCUaX9yJ5uMGIe9UQ" target="_blank">YouTube <i class="bi bi-youtube md:text-5xl text-xl"></i></NuxtLink>
                 </div>
-              </div>
-              <div v-if="!day.events.length > 0" class="h-[10ch] flex flex-col justify-center items-center"> No Stream</div>
             </div>
-          </div>
+            <div class="flex flex-col md:w-full mt-5 mb-4 justify-center items-center text-center">
+                <h1 class="text-5xl">JOIN OUR DISCORD</h1><br/>
+                <NuxtLink class="md:text-4xl text-xl text-center border-2 rounded-lg bg-secondary_m hover:bg-accent_m hover:text-primary_m p-3"   to="https://discord.gg/MEycW8uBPX" >Discord <i class="bi bi-discord md:text-5xl text-2xl"></i></NuxtLink>
+            </div>
         </div>
-      </div>
-      <div class="hero min-h-screen bg-secondary_m ">
-      <div class="hero-content flex-col lg:flex-row">
-        <img src="../assets/images/adventure.jpg" class="md:max-w-6xl max-w-md rounded-lg shadow-2xl" />
-        <div class="flex flex-col justify-center">
-           <div class="flex flex-row mb-7">
-                <h1 class="text-5xl">WATCH</h1>
-                <span class="text-2xl"> US ON </span>
-                <h1 class="text-4xl">TWITCH</h1>
-                <br/>
-            </div>
-          <NuxtLink class="text-4xl text-center border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m"  to="https://www.twitch.tv/grimwood_games" >Twitch <i class="bi bi-twitch md:text-5xl text-3xl"></i></NuxtLink>
-            <div class="flex flex-row mt-5 mb-4">
-                <h1 class="text-5xl">JOIN</h1>
-                <span class="text-2xl"> OUR </span>
-                <h1 class="text-4xl">Discord</h1>
-                <br/>
-            </div>
-          <NuxtLink class="text-4xl text-center border-2 rounded-lg bg-secondary_m hover:bg-accent_m hover:text-primary_m p-3"   to="https://discord.gg/MEycW8uBPX" >Discord <i class="bi bi-discord md:text-5xl text-3xl"></i></NuxtLink>
         </div>
-      </div>
     </div>
-      <!-- <div class="w-full h-[50%] p-3 flex md:flex-row flex-col justify-center items-start">
-        <div class="lg:w-[50%] w-full h-full flex flex-col justify-around items-center bg-adventure bg-cover rounded-xl m-3">
-        </div>
-        <div class="lg:w-[50%] h-full w-full bg-secondary_m rounded-lg m-4 flex flex-row justify-center items-center">
-            <div class="m-6 flex flex-col justify-center">
-              <div class="flex flex-row">
-                <h1 class="text-5xl">JOIN</h1>
-                <span class="text-2xl  ml-2 mr-2">OUR</span>
-                <h1 class="text-4xl">DISCORD</h1>
-                <br/>
-              </div>
-              <NuxtLink class="text-4xl text-center  mt-3 border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m"  to="https://discord.gg/MEycW8uBPX" >Discord <i class="bi bi-discord md:text-5xl text-3xl"></i></NuxtLink>
-            </div>
-             <div class="m-6 flex flex-col justify-center">
-              <div class="flex flex-row">
-                <h1 class="text-5xl">WATCH</h1>
-                <span class="text-2xl ml-2 mr-2"> US ON </span>
-                <h1 class="text-4xl">TWITCH</h1>
-                <br/>
-              </div>
-              <NuxtLink class="text-4xl text-center mt-3 border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m"  to="https://www.twitch.tv/grimwood_games" >Twitch <i class="bi bi-twitch md:text-5xl text-3xl"></i></NuxtLink>
-            </div>
-          </div>
-      </div> -->
-    </div>
+  </div>
 </template>
 
 <script setup>
@@ -167,7 +134,9 @@ const schedule = [
     position: absolute; 
     left: 0px; 
     top: 0px; 
-    opacity: 10;
+}
+.twitch {
+  background-image: url('../assets/images/adventure2.jpg');
 }
 </style>
 

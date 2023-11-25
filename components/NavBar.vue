@@ -54,18 +54,22 @@
     <!--SM-->
     <div class="z-50 sticky top-0 bg-primary_m lg:hidden flex flex-col justify-center items-center">
       <div class="flex flex-row w-full">
-        <button v-if="!modal" class="p-2 text-5xl" @click="handleHamburger"><i class="bi bi-list"></i></button>
-        <button v-if="modal" class="p-2 text-5xl" @click="handleHamburger"><i class="bi bi-x-circle"></i></button>
-        <NuxtLink to="/"><img src="~/assets/images/LogoTest2.png" alt="Grimwood Games"/></NuxtLink>
+        <div class="flex flex-col w-1/3 justify-center">
+          <button v-if="!modal" class="p-2 text-5xl" @click="handleHamburger"><i class="bi bi-list"></i></button>
+          <button v-if="modal" class="p-2 text-5xl" @click="handleHamburger"><i class="bi bi-x-circle"></i></button>
+        </div>
+        <div>
+          <NuxtLink to="/"><img src="~/assets/images/logo_hz_white.svg" alt="Grimwood Games Logo" class="w-[30ch] min-w-[30ch]"></NuxtLink>
+        </div>
       </div>
 
     <div v-if="modal" class="w-screen h-[95vh] flex flex-col items-center justify-between">
       <div class="flex flex-col w-full h-[50vh] justify-center items-center">
         <ul class="flex flex-col w-full items-center">
-          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/about">AboUt</NuxtLink></button></h2></li>
-          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">ProdUcts</NuxtLink></button></h2></li>
-          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li>
-          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">CommUnity</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/about">About</NuxtLink></button></h2></li>
+          <!-- <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">ProdUcts</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li> -->
+          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">Community</NuxtLink></button></h2></li>
         </ul>
       </div>
       <div class="flex flex-row h-full space-x-3 ">

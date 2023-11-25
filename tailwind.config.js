@@ -17,7 +17,7 @@ module.exports = {
       MurkyBrown: "#522B27",
       ForestGreen: "#216152",
       DarkGreen: "#124D51",
-      primary_m: "#181107",
+      primary_m: "#081948",
       primary_m_dark: "#110a02",
       primary_m_light: "#4b4233",
       secondary_m: "#346751",
