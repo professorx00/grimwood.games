@@ -17,9 +17,18 @@
         </div>
         <div class="w-full my-9 flex md:flex-row flex-col justify-center items-center">
           <div class="card w-96 bg-secondary_m shadow-xl m-11">
+            <figure><img src="~/assets/images/andre-benz-qJfznuTMAYA-unsplash.jpg" alt="Grimwood City Editing" /></figure>
+            <NuxtLink class="link" to="/system">
+              <div class="card-body">
+                <h2 class="card-title">GRIMWOOD SYSTEM</h2>
+                <p>We are in the process of making a Grimwood System. The Setting is still Grimwood but we are building our own system.</p>
+              </div>
+            </NuxtLink>
+          </div>
+          <div class="card w-96 bg-secondary_m shadow-xl m-11">
             <figure><img src="~/assets/images/adventure.jpg" alt="Grimwood City Editing" /></figure>
             <div class="card-body">
-              <h2 class="card-title">Grimwood City is going to the editors</h2>
+              <h2 class="card-title">Grimwood City EZD6 is going to the editors</h2>
               <p>We have found an editor and are working to get them a manuscript so they can correct all our mistakes and mistypes.</p>
             </div>
           </div>
@@ -30,23 +39,8 @@
               <NuxtLink class="lg:text-4xl md:text-2xl text-xl border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m mt-4"  to="http://www.twitch.tv/grimwood_games">Watch on Twitch</NuxtLink>
             </div>
           </div>
-          <div class="card w-96 bg-secondary_m shadow-xl m-11">
-            <figure><img src="https://www.scabard.com/user/professorx00/image/grimwood_games_Perched_on_the_edge_of_the_enigmatic_bay_the_cit_2f94bce9-d9a7-4670-95a5-3bdbc21f05b5-2.png" alt="new_ravenloft" /></figure>
-            <div class="card-body">
-              <h2 class="card-title">New Show!</h2>
-              <p>Hey All, We started a new show on twitch. Every other sunday at 8pm. It's using City of Mist rule set</p>
-              <NuxtLink class="lg:text-4xl md:text-2xl text-xl border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m mt-4"  to="http://www.twitch.tv/grimwood_games">Watch on Twitch</NuxtLink>
-            </div>
-          </div>
-          <div class="card w-96 bg-secondary_m shadow-xl m-11">
-            <figure><img src="../assets/images/break_free.jpg" alt="layout"/></figure>
-            <div class="card-body">
-              <h2 class="card-title">Early Preview</h2>
-              <p>Here's a preview of what the Grimwood City Book layout might look like.</p>
-              <NuxtLink class="lg:text-4xl md:text-2xl text-xl border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m mt-4"  to="/preview">Take a look</NuxtLink>
-            </div>
-          </div>
         </div>
+        <div class="w-full my-9 flex md:flex-row flex-col justify-center items-center"></div>
       </div>
       <div class="w-full my-5 flex flex-col justify-center items-center">
         <div class="md:text-left text-center w-full">
@@ -137,6 +131,13 @@ const schedule = [
 }
 .twitch {
   background-image: url('../assets/images/adventure2.jpg');
+}
+.link:hover{
+  color:coral;
+  text-decoration: none;
+}
+.link{
+  text-decoration: none;
 }
 </style>
 

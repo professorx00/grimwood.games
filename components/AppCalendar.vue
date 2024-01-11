@@ -15,24 +15,40 @@ const eventData = [
     start: '2023-12-10T20:00:00',
   },
   {
-    title: 'City of Mist: New Ravenloft',
+    title: 'Pirate Borg',
     start: '2024-01-07T20:00:00',
   },
   {
-    title: 'City of Mist: New Ravenloft',
+    title: 'Pirate Borg',
     start: '2024-01-21T20:00:00',
   },
   {
-    title: 'City of Mist: New Ravenloft',
+    title: 'Pirate Borg',
     start: '2024-02-04T20:00:00',
   },
   {
-    title: 'City of Mist: New Ravenloft',
+    title: 'Pirate Borg',
     start: '2024-02-18T20:00:00',
   },
   {
-    title: 'City of Mist: New Ravenloft',
+    title: 'Pirate Borg',
     start: '2024-03-03T20:00:00',
+  },
+   {
+    title: 'Pirate Borg',
+    start: '2024-03-10T20:00:00',
+  },
+   {
+    title: 'Pirate Borg',
+    start: '2024-03-17T20:00:00',
+  },
+   {
+    title: 'Pirate Borg',
+    start: '2024-03-24T20:00:00',
+  },
+  {
+    title: 'Pirate Borg',
+    start: '2024-03-31T20:00:00',
   },
   {
     title: 'Grimwood City: Long Winter Night',
@@ -53,6 +69,54 @@ const eventData = [
   {
     title: 'Grimwood City: Long Winter Night',
     start: '2024-01-05T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-01-12T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-01-19T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-01-26T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-02-02T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-02-09T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-02-16T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-02-23T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-03-01T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-03-08T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-03-15T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-03-22T20:00:00',
+  },
+  {
+    title: 'Grimwood City: Long Winter Night',
+    start: '2024-03-29T20:00:00',
   },
   {
     title: 'World Building Days',

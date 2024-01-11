@@ -19,13 +19,12 @@
       <div class="flex flex-row h-full items-center justify-center">
         <ul class="flex flex-row w-full items-center space-x-5">
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/about">About</NuxtLink></h2></li>
-          <!-- <li><h2 class="hover:text-accent"><NuxtLink to="/products">ProdUcts</NuxtLink></h2></li> -->
-          <!-- <li><h2 class="hover:text-accent"><NuxtLink to="/news">News</NuxtLink></h2></li> -->
+          <li><h2 class="hover:text-accent_m"><NuxtLink to="/system">Grimwood System</NuxtLink></h2></li>
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/community">CommUnity</NuxtLink></h2></li>
         </ul>
       </div>
     </div>
-    <div class="z-50 min-h-[10%] lg:flex hidden flex-col bg-ForestGreen transition-all duration-1000" :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
+    <div class="z-50 min-h-[50ch] lg:flex hidden flex-col bg-ForestGreen transition-all duration-1000" :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
       <div class="flex flex-row w-full items-center space-x-3">
         <h2>Follow Us</h2>
         <ul class="flex flex-row space-x-2">
@@ -36,17 +35,16 @@
           <li><a href="https://www.facebook.com/profile.php?id=100090535811764" target="_blank"><i class="bi bi-facebook text-2xl hover:text-accent_m"></i></a></li>
         </ul>
       </div>
-      <div class="flex flex-row h-full items-center justify-center">
-        <ul class="flex flex-row space-x-14 mx-4">
-          <li><h1 class="hover:text-accent_m"><NuxtLink to="/about">AboUt</NuxtLink></h1></li>
-          <!-- <li><h1 class="hover:text-accent_m"><NuxtLink to="/products">ProdUcts</NuxtLink></h1></li> -->
-        </ul>
-        <NuxtLink to="/">
-        <!-- <img src="~/assets/images/LogoTall.png" alt="Grimwood Games Logo" class="w-[40ch]"> -->
+      <div class="flex justify-center items-center">
+         <NuxtLink to="/">
         <img src="~/assets/images/Logo_vrt.svg" alt="Grimwood Games Logo" class="w-[20ch]">
       </NuxtLink>
+      </div>
+      <div class="flex flex-row h-full items-center justify-center">
+       
         <ul class="flex flex-row space-x-14 mx-4">
-          <!-- <li><h1 class="hover:text-accent_m"><NuxtLink to="/news">News</NuxtLink></h1></li> -->
+          <li><h1 class="hover:text-accent_m"><NuxtLink to="/about">About</NuxtLink></h1></li>
+          <li><h1 class="hover:text-accent_m"><NuxtLink to="/system">Grimwood System</NuxtLink></h1></li>
           <li><h1 class="hover:text-accent_m"><NuxtLink to="/community">CommUnity</NuxtLink></h1></li>
         </ul>
       </div>
@@ -67,6 +65,7 @@
       <div class="flex flex-col w-full h-[50vh] justify-center items-center">
         <ul class="flex flex-col w-full items-center">
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/about">About</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/system">Grimwood System</NuxtLink></button></h2></li>
           <!-- <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">ProdUcts</NuxtLink></button></h2></li>
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li> -->
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">Community</NuxtLink></button></h2></li>
