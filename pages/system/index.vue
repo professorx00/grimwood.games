@@ -3,8 +3,8 @@
         <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-6xl">
-                    <h1 class="mb-10 text-5xl font-bold">Unveil the Mysteries of Grimwood City with the Grimwood System!</h1>
-                    <p class="mb-10 text-2xl">Embark on an extraordinary journey into the heart of urban fantasy with the <strong>Grimwood System</strong>, a role-playing game that brings the enigmatic world of Grimwood City to life. Dive into a realm where magic weaves through the streets, and adventure lurks in every shadow.</p>
+                    <h1 class="mb-10 text-5xl font-bold">Unveil the Mysteries of Grimwood City with the Ironbound System!</h1>
+                    <p class="mb-10 text-2xl">Embark on an extraordinary journey into the heart of urban fantasy with the <strong>Ironbound System</strong>, a role-playing game that brings the enigmatic world of Grimwood City to life. Dive into a realm where magic weaves through the streets, and adventure lurks in every shadow.</p>
                     <a class="text-4xl text-center  mt-3 border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m" href="https://www.backerkit.com/call_to_action/92cd4630-e662-4b87-a010-771fb23030ed/landing?preview_mode=true" >Sign Up for News</a>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-6xl">
                     <!-- <h1 class="mb-10 text-5xl font-bold">Rich Storytelling and World-Building</h1> -->
-                    <p class="mb-10 text-2xl">Are you ready to uncover the secrets of Grimwood City? Join us in the Grimwood System, where every roll is a story waiting to unfold. Embark on your adventure today!</p>
+                    <p class="mb-10 text-2xl">Are you ready to uncover the secrets of Grimwood City? Join us in the Ironbound System, where every roll is a story waiting to unfold. Embark on your adventure today!</p>
                     <a class="text-4xl text-center  mt-3 border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m" href="https://www.backerkit.com/call_to_action/92cd4630-e662-4b87-a010-771fb23030ed/landing?preview_mode=true">Sign Up for News</a>
                 </div>
             </div>

@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -10,6 +12,7 @@ module.exports = {
   ],
   theme: {
     colors: {
+      ...colors,
       BlueBlack: "#183451",
       LightYellow: "#F8E3B3",
       Peach: "#F8A370",

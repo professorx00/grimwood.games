@@ -20,8 +20,8 @@
             <figure><img src="~/assets/images/andre-benz-qJfznuTMAYA-unsplash.jpg" alt="Grimwood City Editing" /></figure>
             <NuxtLink class="link" to="/system">
               <div class="card-body">
-                <h2 class="card-title">GRIMWOOD SYSTEM</h2>
-                <p>We are in the process of making a Grimwood System. The Setting is still Grimwood but we are building our own system.</p>
+                <h2 class="card-title">Ironbound System</h2>
+                <p>We are in the process of making a Ironbound System. The Setting is still Grimwood but we are building our own system.</p>
               </div>
             </NuxtLink>
           </div>

@@ -1,7 +1,7 @@
 <template>
-    <div class=" w-full text-LightYellow flex flex-col">
+    <div class=" text-LightYellow bg-primary_m">
             <NavBar :atTopOfPage="atTopOfPage"/>
-            <div class="flex flex-col" >
+            <div class=" bg-primary_m" >
                 <slot />
                 <Footer />
             </div>
