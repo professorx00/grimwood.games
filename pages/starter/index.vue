@@ -61,7 +61,7 @@ const submitForm = async (data)=>{
     if(res && res.status){
         alertSuccess.value = true
         setTimeout(()=>{
-            router.push('/system')
+            router.push('/response')
         }, 2500)
     }
 }

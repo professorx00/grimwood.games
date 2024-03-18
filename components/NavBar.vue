@@ -1,6 +1,6 @@
 <template>
   <!--MD or Higher 900px or higher-->
-    <div v-if="!atTopOfPage" class="sticky top-0 left-0 bg-slate-800 flex-row h-[15ch] z-50 hidden lg:flex " >
+    <div class="sticky top-0 left-0 bg-ForestGreen flex-row h-[20ch] z-50 hidden lg:flex " >
       <div class="w-[60%] flex flex-row justify-center items-center">
        <NuxtLink to="/">
         <img src="~/assets/images/logo_hz_white.svg" alt="Grimwood Games Logo" class="w-[30ch] min-w-[30ch]">
@@ -10,27 +10,29 @@
         <ul class="flex flex-row w-full items-center space-x-5">
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/about">About</NuxtLink></h2></li>
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/system">Ironbound System</NuxtLink></h2></li>
-          <li><h2 class="hover:text-accent_m"><NuxtLink to="/community">Community</NuxtLink></h2></li>
+          <!-- <li><h2 class="hover:text-accent_m"><NuxtLink to="/community">Community</NuxtLink></h2></li> -->
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/starter">Free Quick Starter Guide</NuxtLink></h2></li>
+          <li><h2 class="hover:text-accent_m"><a href="https://grimwoodgames.creator-spring.com/" target="_blank">Store</a></h2></li>
         </ul>
       </div>
     </div>
-    <div class="z-50 min-h-[50ch] lg:flex hidden flex-col bg-ForestGreen transition-all duration-1000 " :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
+    <!-- <div class="z-50 min-h-[50ch] lg:flex hidden flex-col bg-ForestGreen transition-all duration-1000 " :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
       
       <div class="flex flex-row h-full items-center justify-center">
         <ul class="flex flex-row space-x-14 mx-4  items-center justify-center">
-          <li><h1 class="hover:text-accent_m"><NuxtLink to="/about">About</NuxtLink></h1></li>
-          <li><h1 class="hover:text-accent_m"><NuxtLink to="/system">Ironbound System</NuxtLink></h1></li>
           <li>
             <NuxtLink to="/">
               <img src="~/assets/images/Logo_vrt.svg" alt="Grimwood Games Logo" class="w-[20ch]">
             </NuxtLink>
           </li>
+          <li><h1 class="hover:text-accent_m"><NuxtLink to="/about">About</NuxtLink></h1></li>
+          <li><h1 class="hover:text-accent_m"><NuxtLink to="/system">Ironbound System</NuxtLink></h1></li>
           <li><h1 class="hover:text-accent_m"><NuxtLink to="/community">Community</NuxtLink></h1></li>
           <li><h1 class="hover:text-accent_m"><NuxtLink to="/starter">Free Quick Starter Guide</NuxtLink></h1></li>
+          <li><h1 class="hover:text-accent_m"><a href="https://grimwoodgames.creator-spring.com/" target="_blank">Store</a></h1></li>
         </ul>
       </div>
-    </div>
+    </div> --> 
     <!--SM-->
     <div class="z-50 sticky top-0 bg-primary_m lg:hidden flex flex-col justify-center items-center">
       <div class="flex flex-row w-full">
@@ -50,8 +52,9 @@
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/system">Ironbound System</NuxtLink></button></h2></li>
           <!-- <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">ProdUcts</NuxtLink></button></h2></li>
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li> -->
-          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">Community</NuxtLink></button></h2></li>
+          <!-- <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">Community</NuxtLink></button></h2></li> -->
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">Free Quick Starter Guide</NuxtLink></button></h2></li>
+          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><a href="https://grimwoodgames.creator-spring.com/" target="_blank">Store</a></button></h2></li>
         </ul>
       </div>
     </div>

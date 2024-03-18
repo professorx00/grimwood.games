@@ -15,7 +15,17 @@
         <div class="w-full md:text-left text-center ml-14">
           <h1 class="ml-6">News</h1>
         </div>
-        <div class="w-full my-9 flex md:flex-row flex-col justify-center items-center">
+        <div class="w-full my-9 flex md:flex-row flex-wrap flex-col justify-center items-center">
+           <div class="card w-96 bg-secondary_m shadow-xl m-11">
+            <figure><img src="~/assets/images/umbrella.jpeg" alt="Grimwood City for EZD6" /></figure>
+            <!-- <NuxtLink class="link" to="#"> -->
+              <div class="card-body">
+                <h2 class="card-title">Grimwood City for EZD6 @ Printers</h2>
+                <p>Wait for a proof for Grimwood City for EZD6. Release should be within the month. </p>
+              </div>
+            <!-- </NuxtLink> -->
+          </div>
+
           <div class="card w-96 bg-secondary_m shadow-xl m-11">
             <figure><img src="~/assets/images/andre-benz-qJfznuTMAYA-unsplash.jpg" alt="Grimwood City Editing" /></figure>
             <NuxtLink class="link" to="/system">
@@ -25,20 +35,15 @@
               </div>
             </NuxtLink>
           </div>
-          <div class="card w-96 bg-secondary_m shadow-xl m-11">
-            <figure><img src="~/assets/images/adventure.jpg" alt="Grimwood City Editing" /></figure>
-            <div class="card-body">
-              <h2 class="card-title">Grimwood City EZD6 is going to the editors</h2>
-              <p>We have found an editor and are working to get them a manuscript so they can correct all our mistakes and mistypes.</p>
-            </div>
-          </div>
+
           <div class="card w-96 bg-secondary_m shadow-xl m-11">
             <figure><img src="~/assets/images/LongWinter.jpg" alt="GrimwoodCity" /></figure>
             <div class="card-body">
               <h2 class="card-title">New Season of Grimwood City</h2>
-              <NuxtLink class="lg:text-4xl md:text-2xl text-xl border-2 rounded-lg p-3 bg-secondary_m hover:bg-accent_m hover:text-primary_m mt-4"  to="http://www.twitch.tv/grimwood_games">Watch on Twitch</NuxtLink>
+              <NuxtLink class="lg:text-3xl md:text-2xl text-xl text-center bg-secondary_m link"  to="http://www.twitch.tv/grimwood_games">Watch on Twitch</NuxtLink>
             </div>
           </div>
+
         </div>
         <div class="w-full my-9 flex md:flex-row flex-col justify-center items-center"></div>
       </div>
@@ -85,8 +90,7 @@ if(data.value.statusCode == 200){
 const schedule = [
   {
     day:"Sunday",
-    events:[ { title:"City of Mist every other Sunday",
-      time: useFormatTime('1/1/2023 08:00:00 PM')}]
+    events:[]
   },
   {
     day:"Monday",
@@ -99,7 +103,7 @@ const schedule = [
   {
     day:"Wednesday",
     events:[{
-      title:"Grimwood Development Stream",
+      title:"Delta Green",
       time: useFormatTime('1/1/2023 08:00:00 PM')
     }]
   },
@@ -110,7 +114,7 @@ const schedule = [
   {
     day:"Friday",
     events:[{
-      title:"Actual Play of Grimwood City: Long Winter Night Campaign",
+      title:"Actual Play of Grimwood City",
       time: useFormatTime('1/1/2023 08:00:00 PM')
     }]
   },
