@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@vueuse/nuxt",
     "@formkit/nuxt",
+    "nuxt-gtag",
   ],
   build: { transpile: ["luxon", "@vee-validate/rules"] },
   pinia: {
@@ -26,6 +27,9 @@ export default defineNuxtConfig({
   formkit: {
     // Experimental support for auto loading (see note):
     autoImport: true,
+  },
+  gtag: {
+    id: "G-45MLS5FM2D",
   },
   runtimeConfig: {
     // The private keys which are only available within server-side
