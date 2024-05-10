@@ -7,141 +7,71 @@ import listPlugin from '@fullcalendar/list'
 
 const eventData = [
   {
-    title: 'City of Mist: New Ravenloft',
-    start: '2023-11-26T20:00:00',
+    title: 'PAX East',
+    start: '2024-03-21T09:00:00',
+    end: '2024-03-24T22:00:00'
   },
   {
-    title: 'City of Mist: New Ravenloft',
-    start: '2023-12-10T20:00:00',
+    title: 'https://ecclesicon.com/',
+    start: '2024-04-12T16:00:00',
+    end: '2024-04-14T22:00:00'
   },
   {
-    title: 'Pirate Borg',
-    start: '2024-01-07T20:00:00',
-  },
-  {
-    title: 'Pirate Borg',
-    start: '2024-01-21T20:00:00',
-  },
-  {
-    title: 'Pirate Borg',
-    start: '2024-02-04T20:00:00',
-  },
-  {
-    title: 'Pirate Borg',
-    start: '2024-02-18T20:00:00',
-  },
-  {
-    title: 'Pirate Borg',
-    start: '2024-03-03T20:00:00',
-  },
-   {
-    title: 'Pirate Borg',
-    start: '2024-03-10T20:00:00',
-  },
-   {
-    title: 'Pirate Borg',
-    start: '2024-03-17T20:00:00',
-  },
-   {
-    title: 'Pirate Borg',
-    start: '2024-03-24T20:00:00',
-  },
-  {
-    title: 'Pirate Borg',
-    start: '2024-03-31T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2023-12-08T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2023-12-15T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2023-12-22T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2023-12-29T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-01-05T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-01-12T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-01-19T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-01-26T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-02-02T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-02-09T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-02-16T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-02-23T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-03-01T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-03-08T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-03-15T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
-    start: '2024-03-22T20:00:00',
-  },
-  {
-    title: 'Grimwood City: Long Winter Night',
+    title: 'Grimwood City',
     start: '2024-03-29T20:00:00',
   },
-  {
-    title: 'World Building Days',
-    start: '2023-11-29T20:00:00',
+   {
+    title: 'Grimwood City',
+    start: '2024-04-05T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-04-19T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-04-26T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-05-03T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-05-10T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-05-17T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-05-24T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-05-31T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-06-07T20:00:00',
+  },
+   {
+    title: 'Grimwood City',
+    start: '2024-06-14T20:00:00',
   },
   {
-    title: 'World Building Days',
-    start: '2023-12-06T20:00:00',
+    title: 'Delta Green',
+    start: '2024-03-27T20:00:00',
   },
   {
-    title: 'World Building Days',
-    start: '2023-12-13T20:00:00',
+    title: 'Delta Green',
+    start: '2024-04-10T20:00:00',
   },
   {
-    title: 'World Building Days',
-    start: '2023-12-20T20:00:00',
-  },
-  {
-    title: 'World Building Days',
-    start: '2023-12-27T20:00:00',
-  },
-  {
-    title: 'World Building Days',
-    start: '2024-01-03T20:00:00',
-  },
+    title: 'Delta Green',
+    start: '2024-04-24T20:00:00',
+  }
 ]
 
 
