@@ -50,8 +50,8 @@
         <ul class="flex flex-col w-full items-center">
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/about">About</NuxtLink></button></h2></li>
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/system">Ironbound System</NuxtLink></button></h2></li>
-          <!-- <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">ProdUcts</NuxtLink></button></h2></li>
-          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li> -->
+          <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/products">Products</NuxtLink></button></h2></li>
+          <!-- <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/news">News</NuxtLink></button></h2></li> -->
           <!-- <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">Community</NuxtLink></button></h2></li> -->
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><NuxtLink to="/community">Free Quick Starter Guide</NuxtLink></button></h2></li>
           <li><h2 class="hover:text-accent_m md:text-5xl text-3xl m-5"><button @click="handleHamburger"><a href="https://grimwoodgames.creator-spring.com/" target="_blank">Store</a></button></h2></li>
