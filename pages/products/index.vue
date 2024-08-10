@@ -41,7 +41,7 @@
         description:
         "Take a looking all the great merchandise we have on out Spring store",
         price: null,
-        img: "hat.jpg",
+        img: "Hat.jpg",
         url: "https://grimwoodgames.creator-spring.com/"
     }
    ]
