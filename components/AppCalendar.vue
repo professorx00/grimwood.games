@@ -7,18 +7,8 @@ import listPlugin from '@fullcalendar/list'
 
 const eventData = [
   {
-    title: 'PAX East',
-    start: '2024-03-21T09:00:00',
-    end: '2024-03-24T22:00:00'
-  },
-  {
-    title: 'https://ecclesicon.com/',
-    start: '2024-04-12T16:00:00',
-    end: '2024-04-14T22:00:00'
-  },
-  {
     title: 'Grimwood City',
-    start: '2024-03-29T20:00:00',
+    start: '2024-08-16T20:00:00',
   },
    {
     title: 'Grimwood City',

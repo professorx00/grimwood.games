@@ -47,14 +47,14 @@
         </div>
         <div class="w-full my-9 flex md:flex-row flex-col justify-center items-center"></div>
       </div>
-      <div class="w-full my-5 flex flex-col justify-center items-center">
+      <!-- <div class="w-full my-5 flex flex-col justify-center items-center">
         <div class="md:text-left text-center w-full">
           <h1 class="ml-6">Weekly Stream Schedule</h1>
         </div>
         <div class="w-full h-[50vh] flex justify-center">
           <AppCalendar />
         </div>
-      </div>
+      </div> -->
       <div class="hero min-h-screen text-LightYellow twitch" >
       <div class="hero-overlay bg-opacity-60"></div>
       <div class="hero-content min-h-full min-w-full flex-col lg:flex-row">
