@@ -10,9 +10,9 @@
         <ul class="flex flex-row w-full items-center space-x-5">
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/about">About</NuxtLink></h2></li>
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/system">Ironbound System</NuxtLink></h2></li>
-          <!-- <li><h2 class="hover:text-accent_m"><NuxtLink to="/community">Community</NuxtLink></h2></li> -->
+          <li><h2 class="hover:text-accent_m"><NuxtLink to="/products">Products</NuxtLink></h2></li>
           <li><h2 class="hover:text-accent_m"><NuxtLink to="/starter">Free Quick Starter Guide</NuxtLink></h2></li>
-          <li><h2 class="hover:text-accent_m"><a href="https://grimwoodgames.creator-spring.com/" target="_blank">Store</a></h2></li>
+          <li><h2 class="hover:text-accent_m"><a href="https://grimwoodgames.creator-spring.com/" target="_blank">Merch Store</a></h2></li>
         </ul>
       </div>
     </div>
