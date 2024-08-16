@@ -3,7 +3,7 @@
     <div class="sticky top-0 left-0 bg-ForestGreen flex-row h-[20ch] z-50 hidden lg:flex " >
       <div class="w-[60%] flex flex-row justify-center items-center">
        <NuxtLink to="/">
-        <img src="~/assets/images/logo_hz_white.svg" alt="Grimwood Games Logo" class="w-[30ch] min-w-[30ch]">
+        <IconLogo class="text-[12rem]" />
       </NuxtLink>
       </div>
       <div class="flex flex-row h-full items-center justify-center">
@@ -41,7 +41,7 @@
           <button v-if="modal" class="p-2 text-5xl" @click="handleHamburger"><i class="bi bi-x-circle"></i></button>
         </div>
         <div>
-          <NuxtLink to="/"><img src="~/assets/images/logo_hz_white.svg" alt="Grimwood Games Logo" class="w-[30ch] min-w-[30ch]"></NuxtLink>
+          <NuxtLink to="/"><IconLogo class="text-[12rem]" /></NuxtLink>
         </div>
       </div>
 
@@ -62,6 +62,7 @@
  </template>
 
 <script setup>
+import IconLogo from '~/assets/images/logo_hz_white.svg'
 const { width, height } = useWindowSize()
 const props = defineProps({
   atTopOfPage: Boolean

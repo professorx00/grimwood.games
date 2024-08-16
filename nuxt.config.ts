@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@formkit/nuxt",
     "nuxt-gtag",
+    "nuxt-svgo",
   ],
   build: { transpile: ["luxon", "@vee-validate/rules"] },
   pinia: {
