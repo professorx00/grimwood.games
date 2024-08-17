@@ -57,6 +57,12 @@ const links = [
         title: "Scabard",
         image: "",
         link: "http://www.scabard.com/"
+    },
+    {
+        id:5,
+        title: "Merch Store",
+        image: "300.jpg",
+        link: "https://grimwoodgames.creator-spring.com/"
     }
 ]
 </script>
