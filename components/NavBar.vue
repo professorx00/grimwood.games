@@ -16,24 +16,6 @@
         </ul>
       </div>
     </div>
-    <!-- <div class="z-50 min-h-[50ch] lg:flex hidden flex-col bg-ForestGreen transition-all duration-1000 " :class="atTopOfPage ? 'opacity-100 visible': 'opacity-0 invisible'">
-      
-      <div class="flex flex-row h-full items-center justify-center">
-        <ul class="flex flex-row space-x-14 mx-4  items-center justify-center">
-          <li>
-            <NuxtLink to="/">
-              <img src="~/assets/images/Logo_vrt.svg" alt="Grimwood Games Logo" class="w-[20ch]">
-            </NuxtLink>
-          </li>
-          <li><h1 class="hover:text-accent_m"><NuxtLink to="/about">About</NuxtLink></h1></li>
-          <li><h1 class="hover:text-accent_m"><NuxtLink to="/system">Ironbound System</NuxtLink></h1></li>
-          <li><h1 class="hover:text-accent_m"><NuxtLink to="/community">Community</NuxtLink></h1></li>
-          <li><h1 class="hover:text-accent_m"><NuxtLink to="/starter">Free Quick Starter Guide</NuxtLink></h1></li>
-          <li><h1 class="hover:text-accent_m"><a href="https://grimwoodgames.creator-spring.com/" target="_blank">Store</a></h1></li>
-        </ul>
-      </div>
-    </div> --> 
-    <!--SM-->
     <div class="z-50 sticky top-0 bg-primary_m lg:hidden flex flex-col justify-center items-center">
       <div class="flex flex-row w-full">
         <div class="flex flex-col w-1/3 justify-center">

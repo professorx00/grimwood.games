@@ -37,7 +37,7 @@ const links = [
     {
         id:1,
         title: "Backerkit for Ironbound",
-        image: "/ironbound_cover.jpg",
+        image: "/Ironbound_cover.jpg",
         link: "https://www.backerkit.com/call_to_action/92cd4630-e662-4b87-a010-771fb23030ed/email_submitted?has_user_account=false&fbclid=IwAR2Eiq2KMwgyr_BI2_egEupVgoIR4breFW-LfxX9t9J39xDc-GAQIulckoE#success"
     },
     {
