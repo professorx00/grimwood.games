@@ -35,6 +35,12 @@ definePageMeta({
 
 const links = [
     {
+        id: 0,
+        title: "Grimwood Games",
+        image: "",
+        link:"http://www.grimwood.games"
+    },
+    {
         id:1,
         title: "Backerkit for Ironbound",
         image: "/Ironbound_cover.jpg",
