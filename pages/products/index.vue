@@ -1,16 +1,18 @@
 <template>
-    <div class="w-full md:h-[70vh] flex justify-center items-center my-5 overflow-y-scroll">
+    <div class="w-full flex flex-col justify-center items-center">
         <div v-if="error">
             {{ error }}
         </div>
-        <div class="w-[100%] p-11 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-          <ProductCard v-for="product in products" :product="product" :key="product.id"/>
+        <h1 class="text-6xl">Products</h1>
+         <div class="w-full flex justify-center items-center my-5 overflow-y-scroll">
+            <div class="w-[100%] p-11 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+            <ProductCard v-for="product in products" :product="product" :key="product.id"/>
+            </div>
         </div>
     </div>
 </template>
 
 <script setup>
-   const {data} = await useFetch('/api/products');
    let products = [
     {
         id: 1,
@@ -41,8 +43,9 @@
         description:
         "Take a looking all the great merchandise we have on out Spring store",
         price: null,
+        external: true,
         img: "Hat.jpg",
-        url: "https://grimwoodgames.creator-spring.com/"
+        url: "/merch"
     }
    ]
   

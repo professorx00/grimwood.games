@@ -16,6 +16,17 @@
           <h1 class="ml-6">News</h1>
         </div>
         <div class="w-full my-9 flex md:flex-row flex-wrap flex-col justify-center items-center">
+          <div class="card w-96 bg-secondary_m shadow-xl m-11">
+            <figure><img src="~/assets/images/ironboundBackerkitCoverImage.jpg" alt="Ironbound Backerkit" /></figure>
+            <!-- <NuxtLink class="link" to="#"> -->
+              <div class="card-body">
+                <h2 class="card-title">Ironbound Backerkit Launch!</h2>
+                <p>Ironbound Backer kit is launching September 1st</p>
+                <a href="/backerkit">Click here for more Information</a>
+              </div>
+            <!-- </NuxtLink> -->
+          </div>
+
            <div class="card w-96 bg-secondary_m shadow-xl m-11">
             <figure><img src="~/assets/images/umbrella.jpeg" alt="Grimwood City for EZD6" /></figure>
             <!-- <NuxtLink class="link" to="#"> -->
@@ -30,8 +41,8 @@
             <figure><img src="~/assets/images/andre-benz-qJfznuTMAYA-unsplash.jpg" alt="Grimwood City Editing" /></figure>
             <NuxtLink class="link" to="/system">
               <div class="card-body">
-                <h2 class="card-title">Ironbound System</h2>
-                <p>We are in the process of making a Ironbound System. The Setting is still Grimwood but we are building our own system.</p>
+                <h2 class="card-title">Ironbound</h2>
+                <p>We are in the process of making a Ironbound. The Setting is still Grimwood but we are building our own system.</p>
               </div>
             </NuxtLink>
           </div>
@@ -43,7 +54,6 @@
               <NuxtLink class="lg:text-3xl md:text-2xl text-xl text-center bg-secondary_m link"  to="http://www.twitch.tv/grimwood_games">Watch on Twitch</NuxtLink>
             </div>
           </div>
-
         </div>
         <div class="w-full my-9 flex md:flex-row flex-col justify-center items-center"></div>
       </div>

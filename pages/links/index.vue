@@ -22,13 +22,7 @@
 </template>
 
 <script setup>
-import IconDiscord from '~/assets/images/discord.svg'
-import IconTwitch from '~/assets/images/twitch.svg'
-import IconFacebook from '~/assets/images/facebook.svg'
-import IconTwitter from '~/assets/images/twitter.svg'
-import IconTikTok from '~/assets/images/tik-tok.svg'
-import IconYoutube from '~/assets/images/youtube.svg'
-import IconLogo from '~/assets/images/Logo_vrt.svg'
+
 definePageMeta({
   layout: false,
 });
@@ -36,9 +30,15 @@ definePageMeta({
 const links = [
     {
         id: 0,
-        title: "Grimwood Games",
+        title: "Grimwood Games Website",
         image: "",
         link:"http://www.grimwood.games"
+    },
+    {
+        id: 6,
+        title: "DrivethruRPG Store",
+        image: "Drivethru.png",
+        link:"https://www.drivethrurpg.com/en/publisher/24411/grimwood-games"
     },
     {
         id:1,
